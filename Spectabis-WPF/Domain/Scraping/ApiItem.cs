@@ -8,7 +8,7 @@ namespace Spectabis_WPF.Domain.Scraping {
 	public class ApiItem {
 		public string ApiName { get; set; }
 		public string ApiKey {
-			get => (string) PropertyInfo?.GetValue(Settings.Default);
+			get => { return (string) PropertyInfo?.GetValue(Settings.Default); }
 			set => PropertyInfo?.SetValue(Settings.Default, value);
 		}
 
