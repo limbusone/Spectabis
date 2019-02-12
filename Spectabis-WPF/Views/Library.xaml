@@ -58,6 +58,10 @@
                 <Button ToolTip="Add Game" Click="PlusButton_Click" Focusable="False">
                     <materialDesign:PackIcon Kind="Playstation" Height="20" Width="20" Focusable="False"/>
                 </Button>
+
+                <Button ToolTip="Refresh" Click="RefreshButton_Click" Focusable="False">
+                    <materialDesign:PackIcon Kind="Refresh" Height="20" Width="20" Focusable="False" />
+                </Button>
             </StackPanel>
         </materialDesign:PopupBox>
 

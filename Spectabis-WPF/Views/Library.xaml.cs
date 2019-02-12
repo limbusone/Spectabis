@@ -1092,6 +1092,17 @@ namespace Spectabis_WPF.Views
             ((MainWindow)Application.Current.MainWindow).Open_AddGame();
         }
 
+        private void RefreshButton_Click(object sender, RoutedEventArgs e)
+        {
+            //Load game profiles
+            reloadGames();
+
+            //List all loaded games
+            EnumerateISOs();
+
+            ScanGameDirectory();
+        }
+
         //"Add Directory" button
         private void Directory_Click(object sender, RoutedEventArgs e)
         {
